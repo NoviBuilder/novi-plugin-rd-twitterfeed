@@ -1,0 +1,57 @@
+/**
+* Twitter Feed
+*/
+.twitter-feed {
+    max-width: 334px;
+}
+
+.twitter-feed .twitter-icon {
+    color: #00bbf5;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.twitter-feed .time {
+    display: block;
+    color: #c2c2c3;
+    text-align: right;
+}
+
+.twitter-feed * + .time {
+    margin-top: 5px;
+}
+
+.twitter-feed-content {
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+.twitter-feed-name{
+    margin-top: 10px;
+    position: relative;
+    color: #00bbf5;
+    display: inline-block;
+}
+.twitter-feed-name:before{
+    content: "-";
+    display: inline-block;
+    color: inherit;
+    padding-right: 5px;
+}
+.twitter-feed-content a{
+    color: #00bbf5;
+}
+
+.twitter-feed-content a:hover,
+.twitter-feed-name:hover{
+    color: #198bc3;
+}
+
+* + .twitter-feed {
+    margin-top: 30px;
+}
+
+@media (min-width: 480px) {
+    * + .twitter-feed {
+        margin-top: 25px;
+    }
+}
