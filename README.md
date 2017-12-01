@@ -2,7 +2,7 @@
 Novi Builder Plugin for visual [RD Twitterfeed](https://github.com/TemplatemonsterPlugins/rd-twitterfeed) customization
 
 ## How to Install
-You should follow several simple steps to intall this plugin:
+You should follow several simple steps to install this plugin:
 * Copy the novi-plugin-rd-twitterfeed.js file to your path/to/novibuilder/plugins folder.
 * Launch NoviBuilder
  
@@ -10,7 +10,7 @@ You should follow several simple steps to intall this plugin:
 * Change user name which posts are shown
  
 ## Developer Settings
-* querySelector — containes a css selector which defines the Plugin container.
+* querySelector — contains a css selector which defines the Plugin container.
 
 ## How to add RD Twitterfeed on your page
 If your website doesn't contain RD Twitterfeed follow the instructions below to install it.
@@ -71,29 +71,17 @@ Example of RD Twitterfeed markup using [Bootstrap](http://getbootstrap.com/) and
 
 ### Initialize RD Twitterfeed
 ```js
-/**
- * Global variables
- */
-"use strict";
 
-var plugins = {
-  twitterfeed: $(".twitter"),
-};
-
-
-/**
- * Initialize All Scripts
- */
 $document.ready(function () {
-
+    var twitterfeed = $(".twitter");
   /**
    * RD Twitter Feed
    * @description Enables RD Twitter Feed plugin
    */
-  if (plugins.twitterfeed.length > 0) {
+  if (twitterfeed.length > 0) {
     var i;
-    for (i = 0; i < plugins.twitterfeed.length; i++) {
-      var twitterfeedItem = plugins.twitterfeed[i];
+    for (i = 0; i < twitterfeed.length; i++) {
+      var twitterfeedItem = twitterfeed[i];
       $(twitterfeedItem).RDTwitter({});
     }
   }

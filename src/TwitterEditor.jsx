@@ -2,17 +2,17 @@ const React = novi.react.React;
 import Trigger from "./editor/Trigger";
 import Body from "./editor/Body";
 const Icons = novi.ui.icons;
-
+const messages = novi.language.getDataByKey("novi-plugin-rd-twitterfeed");
 const EditorItem = {
     trigger: <Trigger/>,
-    tooltip: "Change twitter user name",
-    header: [Icons.ICON_TWITTER, <span>RD Twitter Settings</span>],
+    tooltip: messages.editor.tooltip,
+    header: [Icons.ICON_TWITTER, <span>{messages.editor.header}</span>],
     body: [<Body/>],
     closeIcon: "submit",
     onSubmit: onSubmitAction,
     width: 360,
     height: 94,
-    title: "Twitter settings"
+    title: messages.editor.title
 };
 
 export default EditorItem;
